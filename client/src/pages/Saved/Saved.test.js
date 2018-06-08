@@ -1,10 +1,24 @@
+import { Saved } from './Saved';
 import React from 'react';
-import { Saved } from "./Saved";
-import renderer from 'react-test-renderer';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import { SavedArticlesContainer } from '../../containers/SavedArticlesContainer/SavedArticlesContainer';
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('Saved.js', () => {
-  it('renders without crashing', () => {
-    const rendered = renderer.create(<Saved />).toJSON();
-    expect(rendered).toBeTruthy();
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <Saved />
+    );
+  });
+
+  it('should contain `SavedArticlesContainer` component', () => {
+    expect(
+      wrapper.containsMatchingElement(
+        <SavedArticlesContainer />
+      )
+    ).toBe(true);
   });
 });
