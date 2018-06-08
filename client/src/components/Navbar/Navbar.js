@@ -9,7 +9,7 @@ const linkCSSClass = path => (
 
 export const Navbar = () => {
   return (
-    <nav className='nav nav-pills justify-content-center'>
+    <nav className='nav nav-pills justify-content-center my-4'>
       <Link
         to='/'
         className={linkCSSClass("/")}
