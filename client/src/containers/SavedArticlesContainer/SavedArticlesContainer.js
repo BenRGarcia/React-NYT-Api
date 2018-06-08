@@ -6,7 +6,9 @@ export class SavedArticlesContainer extends Component {
 
   render() {
     return (
-      <SavedArticles />
+      <div className='container'>
+        <SavedArticles />
+      </div>
     );
   }
 }
