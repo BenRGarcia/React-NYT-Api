@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { SearchResults } from '../../components/SearchResults/SearchResults';
+import { SearchContainer } from '../SearchContainer/SearchContainer';
+import { ResultsContainer } from '../ResultsContainer/ResultsContainer';
 
 export class SearchResultsContainer extends Component {
   state = {};
 
   render() {
     return (
-      <SearchResults />
+      <div className='container'>
+        <SearchContainer />
+        <ResultsContainer />
+      </div>
     );
   }
 }
