@@ -5,3 +5,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #555;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000;
+}
