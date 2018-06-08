@@ -23,9 +23,9 @@ export const SavedArticles = props => (
           Remove
         </button>
       </div>
-      <form className='px-3'>
+      <form className='px-3 text-left'>
         <label className='mb-0'>Notes:</label>
-        <textarea name="" id="" className='w-100' style={{ height: '50px' }} value='hello world'></textarea>
+        <textarea name="" id="" className='w-100 p-1 rounded' style={{ height: '50px' }} value='hello world'></textarea>
       </form>
     </div>
     {/* map end: */}
@@ -39,9 +39,9 @@ export const SavedArticles = props => (
           Remove
         </button>
       </div>
-      <form className='px-3'>
+      <form className='px-3 text-left'>
         <label className='mb-0'>Notes:</label>
-        <textarea name="" id="" className='w-100' style={{ height: '50px' }}></textarea>
+        <textarea name="" id="" className='w-100 p-1 rounded' style={{ height: '50px' }}></textarea>
       </form>
     </div>
     {/* map end: */}
@@ -55,9 +55,9 @@ export const SavedArticles = props => (
           Remove
         </button>
       </div>
-      <form className='px-3'>
+      <form className='px-3 text-left'>
         <label className='mb-0'>Notes:</label>
-        <textarea name="" id="" className='w-100' style={{ height: '50px' }}></textarea>
+        <textarea name="" id="" className='w-100 p-1 rounded' style={{ height: '50px' }}></textarea>
       </form>
     </div>
     {/* map end: */}
@@ -71,9 +71,9 @@ export const SavedArticles = props => (
           Remove
         </button>
       </div>
-      <form className='px-3'>
+      <form className='px-3 text-left'>
         <label className='mb-0'>Notes:</label>
-        <textarea name="" id="" className='w-100' style={{ height: '50px' }}></textarea>
+        <textarea name="" id="" className='w-100 p-1 rounded' style={{ height: '50px' }}></textarea>
       </form>
     </div>
     {/* map end: */}
@@ -87,9 +87,9 @@ export const SavedArticles = props => (
           Remove
         </button>
       </div>
-      <form className='px-3'>
+      <form className='px-3 text-left'>
         <label className='mb-0'>Notes:</label>
-        <textarea name="" id="" className='w-100' style={{ height: '50px' }}></textarea>
+        <textarea name="" id="" className='w-100 p-1 rounded' style={{ height: '50px' }}></textarea>
       </form>
     </div>
     {/* map end: */}
