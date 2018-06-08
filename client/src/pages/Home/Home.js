@@ -4,7 +4,6 @@ import { SearchResultsContainer } from '../../containers/SearchResultsContainer/
 
 export const Home = () => (
   <div>
-    Home
     <SearchContainer />
     <SearchResultsContainer />
   </div>
