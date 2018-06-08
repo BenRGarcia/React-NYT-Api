@@ -3,7 +3,6 @@ import { SavedArticlesContainer } from '../../containers/SavedArticlesContainer/
 
 export const Saved = () => (
   <div>
-    Saved Page
     <SavedArticlesContainer />
   </div>
 );
