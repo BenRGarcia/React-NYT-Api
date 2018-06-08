@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Header = () => (
-  <div className="jumbotron jumbotron-fluid mb-2">
+  <div className="jumbotron jumbotron-fluid mb-2 py-4">
     <div className="container">
       <h1 className="display-4">
         New York Times Article Scrubber
