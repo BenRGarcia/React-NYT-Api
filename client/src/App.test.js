@@ -1,10 +1,10 @@
 import React from 'react';
-import { Saved } from "./Saved";
+import App from "./App";
 import renderer from 'react-test-renderer';
 
-describe('Saved.js', () => {
+describe('App.js', () => {
   it('renders without crashing', () => {
-    const rendered = renderer.create(<Saved />).toJSON();
+    const rendered = renderer.create(<App />).toJSON();
     expect(rendered).toBeTruthy();
   });
 });
