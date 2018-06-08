@@ -3,7 +3,6 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
-import { Saved } from '';
 
 describe('Navbar.js', () => {
   let wrapper;
@@ -38,5 +37,31 @@ describe('Navbar.js', () => {
     expect(
       activeLink.hasClass('active')
     ).toBe(false);
+  });
+
+  describe('and when user clicks on `Link` to new page', () => {
+    beforeAll(() => {
+      Object.defineProperty(global.window.location, "pathname", {
+        writable: true,
+        value: "/saved"
+      });
+      const inactiveLink = wrapper.find('Link').last();
+      inactiveLink.simulate('click');
+    });
+
+    it('First `Link` should NOT have an `active` CSS class', () => {
+      console.log(`location.pathname:`, global.window.location.pathname);
+      const activeLink = wrapper.find('Link').first();
+      expect(
+        activeLink.hasClass('active')
+      ).toBe(false);
+    });
+
+    it('Last `Link` should have an `active` CSS class', () => {
+      const activeLink = wrapper.find('Link').last();
+      expect(
+        activeLink.hasClass('active')
+      ).toBe(true);
+    });
   });
 });
