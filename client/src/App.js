@@ -10,17 +10,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <Header />
-        <Router>
-          <div>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/saved' component={Saved} />
-          </div>
-        </Router>
-        <Footer />
-      </div>
+      <Router>
+        <div>
+          <Navbar />
+          <Header />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/saved' component={Saved} />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
