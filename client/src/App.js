@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar />
           <Header />
+          <Navbar />
           <Route exact path='/' component={Home} />
           <Route exact path='/saved' component={Saved} />
           <Footer />
