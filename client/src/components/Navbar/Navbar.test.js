@@ -3,6 +3,7 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
+import { Saved } from '';
 
 describe('Navbar.js', () => {
   let wrapper;
@@ -30,5 +31,12 @@ describe('Navbar.js', () => {
     expect(
       activeLink.hasClass('active')
     ).toBe(true);
+  });
+
+  it('Last `Link` should NOT have an `active` CSS class', () => {
+    const activeLink = wrapper.find('Link').last();
+    expect(
+      activeLink.hasClass('active')
+    ).toBe(false);
   });
 });
